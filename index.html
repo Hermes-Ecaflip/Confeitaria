@@ -9,53 +9,67 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">DiPolly Confeitaria</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Cardápio
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Bolos</a></li>
-                                <li><a class="dropdown-item" href="#">Doces</a></li>
-                                <li><a class="dropdown-item" href="#">Pães</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- Botão do carrinho -->
-                    <button class="border-0 ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrinho" aria-controls="offcanvasCarrinho">
-                        <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #f7b1b2;"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Off-canvas do carrinho -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarrinho" aria-labelledby="offcanvasCarrinhoLabel">
-            <div class="offcanvas-header">
-                <h5 id="offcanvasCarrinhoLabel">Carrinho de Compras</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <!-- Conteúdo do carrinho aqui -->
-                <p>Seu carrinho está vazio.</p>
-            </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Botão do menu de navegação para telas pequenas -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Links de navegação -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cardápio
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Bolos</a></li>
+                  <li><a class="dropdown-item" href="#">Doces</a></li>
+                  <li><a class="dropdown-item" href="#">Pães</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Logo da confeitaria no centro para todas as telas -->
+          <a class="navbar-brand mx-auto" href="#" style="position: absolute; left: 50%; transform: translateX(-50%);">DiPolly Confeitaria</a>
+          <!-- Botão do carrinho à direita para todas as telas -->
+          <button class="border-0 ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrinho" aria-controls="offcanvasCarrinho" style="position: absolute; right: 0;">
+            <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #f7b1b2;"></i>
+          </button>
         </div>
+      </nav>
     </header>
 
-    <!-- ... o resto do seu body ... -->
+    <main>
+      <!-- carrossel com o catalogo -->
+       <section></section>
+
+      <!-- descrição com imagem dos maiores pedidos --> 
+       <section></section>
+    </main>
+      
+
+    <footer></footer>
+      
+      <!-- Off-canvas do carrinho -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarrinho" aria-labelledby="offcanvasCarrinhoLabel">
+          <div class="offcanvas-header">
+              <h5 id="offcanvasCarrinhoLabel">Carrinho de Compras</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <!-- Conteúdo do carrinho aqui -->
+              <div id="cart-content">
+                <p>Seu carrinho está vazio.</p>
+              </div>
+          </div>
+      </div>
 
     <script src="https://kit.fontawesome.com/13033c9605.js" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
